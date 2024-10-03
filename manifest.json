@@ -1,7 +1,7 @@
 {
   "name": "Rumah Jahit Bunda",
   "short_name": "JahitBunda",
-  "start_url": "home.html",
+  "start_url": "index.html",
   "display": "standalone",
   "background_color": "#F6EACB",
   "theme_color": "#F6EACB",
