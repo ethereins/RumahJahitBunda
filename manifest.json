@@ -7,12 +7,12 @@
   "theme_color": "#F6EACB",
   "icons": [
     {
-      "src": "https://png.pngtree.com/png-clipart/20210522/ourlarge/pngtree-cute-hijab-seamstress-using-sewing-machine-png-image_3323724.jpg",
+      "src": "icons/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "https://png.pngtree.com/png-clipart/20210522/ourlarge/pngtree-cute-hijab-seamstress-using-sewing-machine-png-image_3323724.jpg",
+      "src": "icons/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
