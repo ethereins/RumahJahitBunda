@@ -1,16 +1,13 @@
-const CACHE_NAME = 'rumahjahit-cache-v1';
 const urlsToCache = [
    '/',
    '/index.html',
-   '/offline.html',
+   '/offline.html',  // Pastikan offline.html dicache
    '/about.html',
    '/contact.html',
-   '/styles.css', 
+   '/styles.css',
    '/icons/icon-192x192.png',
    '/icons/icon-512x512.png'
 ];
-
-// Instalasi service worker dan caching halaman
 self.addEventListener('install', function(event) {
    event.waitUntil(
       caches.open(CACHE_NAME)
