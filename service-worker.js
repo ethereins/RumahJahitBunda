@@ -29,7 +29,7 @@ self.addEventListener('fetch', function(event) {
             return response;
          }
          return fetch(event.request).catch(function() {
-            return caches.match('/offline.html');
+            return caches.match('offline.html');
          });
       })
    );
