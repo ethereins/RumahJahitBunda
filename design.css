@@ -9,7 +9,7 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: 'Times New Roman', Sans-Serif;
-  color: #364f6b;
+  color: #000000;
 }
 
 .wrapper {
@@ -38,11 +38,16 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  line-height: 80px;
+  background: url('https://img.freepik.com/free-photo/ivory-acrylic-painting-texture-background_53876-96896.jpg?t=st=1728100179~exp=1728103779~hmac=4a44c399ddb1823c33b0e0b7c0563bce0af35000f5e3c27036f7c44d1d919df5&w=900'); /* Gambar latar belakang */
+  background-size: cover; 
+  background-position: center; 
   position: sticky;
   top: 0;
-  background: #F6EACBF6;
+  transition: top 0.3s; 
+  z-index: 1000;
+  height: 80px; 
 }
+
 
 nav ul {
   list-style-type: none;
@@ -109,43 +114,137 @@ h2 {
   line-height: 50px;
 }
 
-@media (max-width: 768px) {
-  section {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  section img {
-    width: 80%;
-  }
+.home-image {
+    width: 60%; 
+    height: auto; 
+    max-width: 600px; 
+    margin: 20px 0; 
+}
 
 .kolom2 {
     padding-left: 0;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 0px;
   }
 
   .kolom2 .deskripsi {
     font-size: 15px;
   }
   
-  kolom3 {
-    padding-left: 0;
-    text-align: center;
-    margin-top: 30px;
-  }
-
-  .kolom3 .deskripsi {
-    font-size: 10px;
-  }
-  
   h2 {
-    font-size: 30px;
+    font-size: 32px;
   }
 
   .logo {
     font-size: 36px;
   }
+
+  .kolom3 {
+    background-image: url('https://img.freepik.com/free-vector/beige-fluid-gradient-background-with-copy-space_53876-114461.jpg?t=st=1728107679~exp=1728111279~hmac=e977bb02ab9352469ba1380a3a87f9f49b578ce3b3311bd46f92b71954b1b399&w=996');
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .deskripsi3 {
+    font-size: 16px;
+    color: #666;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .deskripsi3 span {
+    margin-bottom: 10px;
+  }
+
+  .deskripsi3 span:hover {
+    text-decoration: underline;
+  }
+  .deskripsi3 img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact h2 {
+  font-size: 45px;
+  font-weight: 800;
+  font-family: 'Times New Roman';
+  margin-bottom: 40px;
+  color: #364f6b;
+  width: 100%;
+  line-height: 50px;
+  text-align: center;
+}
+
+#produk {
+    text-align: left;
+    margin-left: 310px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    font-size: 48px;
+ }
+  
+.produk-gambar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 400px;
+  }
+  
+.produk-gambar img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+ }
+
+ .tunggu-apa-lagi {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('https://img.freepik.com/free-vector/beige-fluid-gradient-background-with-copy-space_53876-114461.jpg?t=st=1728107679~exp=1728111279~hmac=e977bb02ab9352469ba1380a3a87f9f49b578ce3b3311bd46f92b71954b1b399&w=996');
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  color: #000;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 250px;
+}
+
+.produk-gambar img {
+  transition: transform 0.5s;
+}
+
+.produk-gambar img:hover {
+  transform: scale(1.1);
+}
+
+.tunggu-apa-lagi {
+  transition: transform 0.5s;
+}
+
+.tunggu-apa-lagi:hover {
+  transform: scale(1.1);
+}
+
+.kolom3 {
+  transition: transform 0.5s;
+}
+
+.kolom3:hover {
+  transform: scale(1.1);
 }
 
 form {
