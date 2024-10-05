@@ -5,7 +5,9 @@ const urlsToCache = [
   '/offline.html',  
   '/about.html',
   '/contact.html',
-  '/styles.css'
+  '/styles.css',
+  '/192x192.png',
+  '/512x512.png'
 ];
 
 self.addEventListener('install', function(event) {
